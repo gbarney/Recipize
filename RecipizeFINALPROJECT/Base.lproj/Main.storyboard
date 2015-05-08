@@ -34,7 +34,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RVb-tJ-y6S" kind="presentation" id="bqY-Ax-xNe"/>
+                                    <segue destination="g3f-Yj-0uL" kind="presentation" id="qnV-hf-Pwb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZj-vO-oAk">
@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="1234.5" y="288.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipies Table View Controller-->
         <scene sceneID="4f5-bV-2he">
             <objects>
-                <viewController id="Rcu-BQ-a7Q" sceneMemberID="viewController">
+                <viewController id="Rcu-BQ-a7Q" customClass="RecipiesTableViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fbO-9o-oIE"/>
                         <viewControllerLayoutGuide type="bottom" id="b35-LL-tfh"/>
@@ -70,16 +70,90 @@
                     <view key="view" contentMode="scaleToFill" id="JmL-dk-kTW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l82-h7-Dgq">
+                                <rect key="frame" x="-5" y="8" width="380" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="4Bq-T9-bos">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Bq-T9-bos" id="cDM-fZ-XFr">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rcu-BQ-a7Q" id="KE2-OZ-AlQ"/>
+                                    <outlet property="delegate" destination="Rcu-BQ-a7Q" id="yRo-ew-PH8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="QuZ-8S-hcL">
-                        <barButtonItem key="rightBarButtonItem" title="Back" id="hgb-tc-lE0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="hgb-tc-lE0">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="sEs-SC-45n"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="recipieTableView" destination="l82-h7-Dgq" id="0hr-iI-hhi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-gD-tSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2229.5" y="288.5"/>
+        </scene>
+        <!--Grocery List Table View Controller-->
+        <scene sceneID="xeb-ZN-LdN">
+            <objects>
+                <viewController id="CQJ-f8-bpo" customClass="GroceryListTableViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJm-LU-NP3"/>
+                        <viewControllerLayoutGuide type="bottom" id="9J2-Qx-98q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rsz-3R-ywy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hVM-K1-PAn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groceryCell" id="0E8-dZ-wKP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0E8-dZ-wKP" id="Ojk-la-1Ox">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CQJ-f8-bpo" id="iFa-GS-d8b"/>
+                                    <outlet property="delegate" destination="CQJ-f8-bpo" id="Zru-5e-j1s"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGi-Js-AKX">
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="cYf-J9-1QE">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="6OR-ar-CPD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="groceryListTableView" destination="hVM-K1-PAn" id="qSR-m1-Xzu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2229.5" y="1064.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VNu-Mr-1o7">
@@ -100,68 +174,27 @@
             </objects>
             <point key="canvasLocation" x="1691.5" y="288.5"/>
         </scene>
-        <!--Grocery List Table View Controller-->
-        <scene sceneID="fNS-2b-D5D">
-            <objects>
-                <viewController id="LXH-VJ-2rN" customClass="GroceryListTableViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="exj-kN-4wm"/>
-                        <viewControllerLayoutGuide type="bottom" id="9m2-oc-hhq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7Gq-Xb-r93">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1BZ-St-khi">
-                                <rect key="frame" x="0.0" y="-48" width="375" height="715"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groceryCell" rowHeight="75" id="k85-AM-Y0s">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k85-AM-Y0s" id="8Be-nq-rcb">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="LXH-VJ-2rN" id="Vf5-gk-aGL"/>
-                                    <outlet property="delegate" destination="LXH-VJ-2rN" id="e3U-Kc-Nzx"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Mwj-Is-HPP">
-                        <barButtonItem key="rightBarButtonItem" title="Back" id="nAQ-mR-OCu"/>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="groceryListTableView" destination="1BZ-St-khi" id="DfW-5w-xvZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzw-9f-08t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1691.5" y="1054.5"/>
-        </scene>
         <!--Navigation Controller-->
-        <scene sceneID="WjY-hK-jLS">
+        <scene sceneID="fBb-ka-EBD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RVb-tJ-y6S" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g3f-Yj-0uL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6QG-m5-1Wd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xRv-zc-Y8B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LXH-VJ-2rN" kind="relationship" relationship="rootViewController" id="Vle-jR-fkF"/>
+                        <segue destination="CQJ-f8-bpo" kind="relationship" relationship="rootViewController" id="fB7-AZ-Vnd"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zur-Kl-YUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpk-FY-eoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234.5" y="1054.5"/>
+            <point key="canvasLocation" x="1691.5" y="1034.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6OR-ar-CPD"/>
+    </inferredMetricsTieBreakers>
 </document>
