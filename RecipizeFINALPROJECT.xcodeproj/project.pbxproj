@@ -13,6 +13,7 @@
 		3F0A84D41AFBAF1400DA66A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */; };
 		3F0A84D71AFBAF1400DA66A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */; };
 		3F0A84E31AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */; };
+		3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3F0A84DC1AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipizeFINALPROJECTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0A84E11AFBAF1400DA66A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipizeFINALPROJECTTests.swift; sourceTree = "<group>"; };
+		3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */,
 				3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */,
 				3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */,
+				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
 				3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */,
 				3F0A84CA1AFBAF1400DA66A0 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0A84CF1AFBAF1400DA66A0 /* ViewController.swift in Sources */,
+				3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */,
 				3F0A84CD1AFBAF1400DA66A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +375,7 @@
 				INFOPLIST_FILE = RecipizeFINALPROJECTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipizeFINALPROJECT.app/Contents/MacOS/RecipizeFINALPROJECT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipizeFINALPROJECT.app/RecipizeFINALPROJECT";
 			};
 			name = Debug;
 		};
@@ -386,7 +390,7 @@
 				INFOPLIST_FILE = RecipizeFINALPROJECTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipizeFINALPROJECT.app/Contents/MacOS/RecipizeFINALPROJECT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipizeFINALPROJECT.app/RecipizeFINALPROJECT";
 			};
 			name = Release;
 		};
@@ -409,6 +413,7 @@
 				3F0A84E81AFBAF1400DA66A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F0A84E91AFBAF1400DA66A0 /* Build configuration list for PBXNativeTarget "RecipizeFINALPROJECTTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				3F0A84EB1AFBAF1400DA66A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
