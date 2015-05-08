@@ -15,7 +15,6 @@
 		3F0A84E31AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */; };
 		3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */; };
 		3F1260231AFC5EE000D9E0AA /* RecipiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */; };
-		3F1260251AFC64E600D9E0AA /* food_jpg_converted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1260241AFC64E600D9E0AA /* food_jpg_converted.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 		3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipizeFINALPROJECTTests.swift; sourceTree = "<group>"; };
 		3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
 		3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipiesTableViewController.swift; sourceTree = "<group>"; };
-		3F1260241AFC64E600D9E0AA /* food_jpg_converted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_jpg_converted.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 				3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */,
 				3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */,
 				3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */,
-				3F1260241AFC64E600D9E0AA /* food_jpg_converted.png */,
 				3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */,
 				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
@@ -203,7 +200,6 @@
 			files = (
 				3F0A84D21AFBAF1400DA66A0 /* Main.storyboard in Resources */,
 				3F0A84D71AFBAF1400DA66A0 /* LaunchScreen.xib in Resources */,
-				3F1260251AFC64E600D9E0AA /* food_jpg_converted.png in Resources */,
 				3F0A84D41AFBAF1400DA66A0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,9 +46,6 @@
                                     <segue destination="nz7-Mj-1o0" kind="presentation" id="pzg-Pq-BG5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_jpg_converted.png" translatesAutoresizingMaskIntoConstraints="NO" id="acf-P5-tZm">
-                                <rect key="frame" x="59" y="204" width="240" height="201"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -194,9 +191,6 @@
             <point key="canvasLocation" x="1691.5" y="1034.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="food_jpg_converted.png" width="555" height="555"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
