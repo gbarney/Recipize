@@ -22,9 +22,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acf-P5-tZm">
-                                <rect key="frame" x="59" y="220" width="240" height="128"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BM-em-3dO">
                                 <rect key="frame" x="59" y="517" width="257" height="57"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.41999999999999998" colorSpace="calibratedRGB"/>
@@ -49,6 +46,9 @@
                                     <segue destination="nz7-Mj-1o0" kind="presentation" id="pzg-Pq-BG5"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_jpg_converted.png" translatesAutoresizingMaskIntoConstraints="NO" id="acf-P5-tZm">
+                                <rect key="frame" x="59" y="204" width="240" height="201"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -194,6 +194,9 @@
             <point key="canvasLocation" x="1691.5" y="1034.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food_jpg_converted.png" width="555" height="555"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
