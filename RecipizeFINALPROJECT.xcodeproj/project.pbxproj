@@ -83,7 +83,6 @@
 			children = (
 				3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */,
 				3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */,
-				3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */,
 				3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */,
 				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
@@ -97,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3F0A84CB1AFBAF1400DA66A0 /* Info.plist */,
+				3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
