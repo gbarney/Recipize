@@ -11,7 +11,7 @@ import UIKit
 class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var groceryListTableView: UITableView!
-    var foodItems = ["frozen pizza"]
+    var foodItems = ["frozen pizza", "Lettuce", "Tomato", "Cheese"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,4 +28,17 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
     }
+    
+    @IBAction func onEditTappedButton(sender: UIBarButtonItem)
+    {
+        if sender.tag == 0 {
+            groceryListTableView.editing = true
+            sender.tag = 1
+        }
+        else {
+            groceryListTableView.editing = false
+            sender.tag = 0
+        }
+    }
+    
 }

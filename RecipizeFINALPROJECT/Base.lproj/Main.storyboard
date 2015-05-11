@@ -169,6 +169,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xGi-Js-AKX">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="ujR-Zg-rCy">
+                            <connections>
+                                <action selector="onEditTappedButton:" destination="CQJ-f8-bpo" id="fK3-3b-UGm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Back" id="cYf-J9-1QE">
                             <connections>
                                 <segue destination="vXZ-lx-hvc" kind="show" id="6OR-ar-CPD"/>
@@ -182,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229.5" y="1064.5"/>
+            <point key="canvasLocation" x="2229.5" y="1034.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VNu-Mr-1o7">
