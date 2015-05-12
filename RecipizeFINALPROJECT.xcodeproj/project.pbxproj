@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F05BCDD1B02489E00D09D5F /* foodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BCDC1B02489E00D09D5F /* foodItem.swift */; };
 		3F0A84CD1AFBAF1400DA66A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */; };
 		3F0A84CF1AFBAF1400DA66A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */; };
 		3F0A84D21AFBAF1400DA66A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F05BCDC1B02489E00D09D5F /* foodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = foodItem.swift; path = ../foodItem.swift; sourceTree = "<group>"; };
 		3F0A84C71AFBAF1400DA66A0 /* RecipizeFINALPROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipizeFINALPROJECT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0A84CB1AFBAF1400DA66A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */,
 				3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */,
+				3F05BCDC1B02489E00D09D5F /* foodItem.swift */,
 				3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */,
 				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
@@ -222,6 +225,7 @@
 				3F1260231AFC5EE000D9E0AA /* RecipiesTableViewController.swift in Sources */,
 				3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */,
 				3F0A84CD1AFBAF1400DA66A0 /* AppDelegate.swift in Sources */,
+				3F05BCDD1B02489E00D09D5F /* foodItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
