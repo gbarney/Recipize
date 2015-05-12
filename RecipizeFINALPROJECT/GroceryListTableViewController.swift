@@ -42,4 +42,13 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         }
     }
     
+    @IBAction func onAddGroceryButtonTapped(sender: UIBarButtonItem) {
+        var alert = UIAlertController(title: "Add Grocery", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add Grocery Here"
+            
+        }
+        
+       
+    }
 }
