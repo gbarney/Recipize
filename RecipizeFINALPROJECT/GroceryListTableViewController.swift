@@ -35,11 +35,6 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
             groceryListTableView.reloadData()
         }
     }
-
-<<<<<<< HEAD
-    
-=======
->>>>>>> 919ebc4ab5a25a13cc5d7173b9d55baa2cdb1ca8
     
     @IBAction func onEditTappedButton(sender: UIBarButtonItem)
     {
@@ -62,6 +57,7 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
         alert.addAction(cancelAction)
 
+   
        
     }
 }
