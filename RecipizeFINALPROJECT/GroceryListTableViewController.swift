@@ -28,6 +28,14 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
     }
+
+func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            foodItems.removeAtIndex(indexPath.row)
+            groceryListTableView.reloadData()
+        }
+    }
+
     
     
     @IBAction func onEditTappedButton(sender: UIBarButtonItem)
@@ -48,7 +56,9 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
             textField.placeholder = "Add Grocery Here"
             
         }
-        
+        var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
+        alert.addAction(cancelAction)
+
        
     }
 }
