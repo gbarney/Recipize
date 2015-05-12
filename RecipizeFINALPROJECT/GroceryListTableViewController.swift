@@ -36,10 +36,7 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         }
     }
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> 919ebc4ab5a25a13cc5d7173b9d55baa2cdb1ca8
+
     
     @IBAction func onEditTappedButton(sender: UIBarButtonItem)
     {
