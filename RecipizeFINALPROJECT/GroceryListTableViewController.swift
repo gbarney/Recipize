@@ -24,7 +24,7 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as UITableViewCell
+        var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
     }
@@ -36,10 +36,6 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         }
     }
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> 919ebc4ab5a25a13cc5d7173b9d55baa2cdb1ca8
     
     @IBAction func onEditTappedButton(sender: UIBarButtonItem)
     {
@@ -61,6 +57,14 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         }
         var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
         alert.addAction(cancelAction)
+        
+        var addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default) { (action) -> Void in
+            var foodTextField = alert.textFields?[0] as! UITextField
+            self.foodItems.append((name: foodTextField.text))
+            self.groceryListTableView.reloadData()
+        }
+        alert.addAction(addAction)
+        self.presentViewController(alert, animated: true, completion: nil)
 
        
     }
