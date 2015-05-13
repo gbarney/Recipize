@@ -139,6 +139,9 @@
                                 <state key="normal" title="Go Online">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="j5k-Gw-T0b" kind="presentation" id="wH6-aI-o85"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -176,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ai-Iq-aeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4474.5" y="288.5"/>
+            <point key="canvasLocation" x="5562.5" y="288.5"/>
         </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="xeb-ZN-LdN">
@@ -300,6 +303,52 @@
             </objects>
             <point key="canvasLocation" x="2701.5" y="288.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="M7M-EU-KB3">
+            <objects>
+                <viewController id="kZz-ZY-u53" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wsa-L1-8ap"/>
+                        <viewControllerLayoutGuide type="bottom" id="OdN-Ak-Phs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yCO-XB-fkP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeC-kC-f92">
+                                <rect key="frame" x="111" y="326" width="152" height="152"/>
+                                <state key="normal" backgroundImage="Food_Network_logo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
+                                <rect key="frame" x="96" y="88" width="182" height="83"/>
+                                <state key="normal" backgroundImage="Logo_2013_Google.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
+                                <rect key="frame" x="76" y="191" width="222" height="113"/>
+                                <state key="normal" backgroundImage="arlogo_rgb">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
+                                <rect key="frame" x="96" y="515" width="182" height="80"/>
+                                <state key="normal" backgroundImage="Yummly_logo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lfO-su-e9f"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4272.5" y="287.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rjq-ib-7G1">
             <objects>
@@ -317,10 +366,33 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-Sh-C2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3662" y="288"/>
+            <point key="canvasLocation" x="4891.5" y="287.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dQy-S9-CRr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j5k-Gw-T0b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p3Y-pn-8YV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kZz-ZY-u53" kind="relationship" relationship="rootViewController" id="HPR-g4-Gtg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9K-Xn-J4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3722" y="288"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Food_Network_logo" width="1000" height="1000"/>
+        <image name="Logo_2013_Google.png" width="850" height="300"/>
+        <image name="Yummly_logo" width="1855" height="689"/>
+        <image name="arlogo_rgb" width="823" height="304"/>
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>

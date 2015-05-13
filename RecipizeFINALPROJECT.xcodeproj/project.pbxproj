@@ -16,6 +16,10 @@
 		3F0A84E31AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */; };
 		3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */; };
 		3F1260231AFC5EE000D9E0AA /* RecipiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */; };
+		3FC10A6D1B0396BA00185AE1 /* Food_Network_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A6C1B0396BA00185AE1 /* Food_Network_logo.png */; };
+		3FC10A711B03982D00185AE1 /* Yummly_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A6E1B03982D00185AE1 /* Yummly_logo.png */; };
+		3FC10A721B03982D00185AE1 /* Logo_2013_Google.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A6F1B03982D00185AE1 /* Logo_2013_Google.png */; };
+		3FC10A731B03982D00185AE1 /* arlogo_rgb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A701B03982D00185AE1 /* arlogo_rgb.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipizeFINALPROJECTTests.swift; sourceTree = "<group>"; };
 		3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
 		3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipiesTableViewController.swift; sourceTree = "<group>"; };
+		3FC10A6C1B0396BA00185AE1 /* Food_Network_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Food_Network_logo.png; path = ../../../../../Pictures/Food_Network_logo.png; sourceTree = "<group>"; };
+		3FC10A6E1B03982D00185AE1 /* Yummly_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yummly_logo.png; path = ../../../../../Pictures/Yummly_logo.png; sourceTree = "<group>"; };
+		3FC10A6F1B03982D00185AE1 /* Logo_2013_Google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_2013_Google.png; path = ../../../../../Pictures/Logo_2013_Google.png; sourceTree = "<group>"; };
+		3FC10A701B03982D00185AE1 /* arlogo_rgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arlogo_rgb.png; path = ../../../../../Pictures/arlogo_rgb.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 				3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */,
 				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
+				3FC10A6C1B0396BA00185AE1 /* Food_Network_logo.png */,
 				3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */,
 				3F0A84CA1AFBAF1400DA66A0 /* Supporting Files */,
 			);
@@ -100,6 +109,9 @@
 			children = (
 				3F0A84CB1AFBAF1400DA66A0 /* Info.plist */,
 				3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */,
+				3FC10A6E1B03982D00185AE1 /* Yummly_logo.png */,
+				3FC10A6F1B03982D00185AE1 /* Logo_2013_Google.png */,
+				3FC10A701B03982D00185AE1 /* arlogo_rgb.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,7 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0A84D21AFBAF1400DA66A0 /* Main.storyboard in Resources */,
+				3FC10A6D1B0396BA00185AE1 /* Food_Network_logo.png in Resources */,
 				3F0A84D71AFBAF1400DA66A0 /* LaunchScreen.xib in Resources */,
+				3FC10A721B03982D00185AE1 /* Logo_2013_Google.png in Resources */,
+				3FC10A711B03982D00185AE1 /* Yummly_logo.png in Resources */,
+				3FC10A731B03982D00185AE1 /* arlogo_rgb.png in Resources */,
 				3F0A84D41AFBAF1400DA66A0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
