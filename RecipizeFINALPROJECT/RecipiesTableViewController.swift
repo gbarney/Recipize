@@ -26,7 +26,7 @@ class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        var cell = recipieTableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath) as UITableViewCell
+        var cell = recipieTableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = recipiesArray[indexPath.row]
         return cell
     }
