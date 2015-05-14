@@ -16,7 +16,6 @@
 		3F0A84E31AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */; };
 		3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */; };
 		3F1260231AFC5EE000D9E0AA /* RecipiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */; };
-		3FFFA5471B041988001E2B01 /* DetailRecipiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFA5461B041988001E2B01 /* DetailRecipiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipizeFINALPROJECTTests.swift; sourceTree = "<group>"; };
 		3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
 		3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipiesTableViewController.swift; sourceTree = "<group>"; };
-		3FFFA5461B041988001E2B01 /* DetailRecipiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRecipiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				3F05BCDC1B02489E00D09D5F /* foodItem.swift */,
 				3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */,
 				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
-				3FFFA5461B041988001E2B01 /* DetailRecipiesViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
 				3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */,
 				3F0A84CA1AFBAF1400DA66A0 /* Supporting Files */,
@@ -229,7 +226,6 @@
 				3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */,
 				3F0A84CD1AFBAF1400DA66A0 /* AppDelegate.swift in Sources */,
 				3F05BCDD1B02489E00D09D5F /* foodItem.swift in Sources */,
-				3FFFA5471B041988001E2B01 /* DetailRecipiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

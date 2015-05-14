@@ -10,6 +10,8 @@ import UIKit
 
 class DetailRecipiesViewController: UIViewController {
 
+    @IBOutlet weak var recipieLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

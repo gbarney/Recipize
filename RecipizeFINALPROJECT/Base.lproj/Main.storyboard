@@ -85,9 +85,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Bq-T9-bos" id="cDM-fZ-XFr">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ViP-fh-8YQ" kind="presentation" id="f9N-mq-bbL"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -284,35 +281,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpk-FY-eoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1691.5" y="1034.5"/>
-        </scene>
-        <!--Detail Recipies View Controller-->
-        <scene sceneID="WH9-s5-Fns">
-            <objects>
-                <viewController id="ViP-fh-8YQ" customClass="DetailRecipiesViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9eo-oo-lMb"/>
-                        <viewControllerLayoutGuide type="bottom" id="WJH-Yg-dwn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mwU-L0-rrx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-cK-QIp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem id="tnJ-X8-eDW">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9EA-Q0-2yr"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ry5-0z-Vm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2701.5" y="-462.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bcz-xs-vFy">
