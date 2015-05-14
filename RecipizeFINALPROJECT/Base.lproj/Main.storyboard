@@ -223,6 +223,10 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Aqa-ig-XKe" appends="YES" id="Dn5-3a-2DK"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="xGi-Js-AKX">
@@ -244,6 +248,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Aqa-ig-XKe">
+                    <connections>
+                        <action selector="groceryVCTapped:" destination="CQJ-f8-bpo" id="Oai-kJ-CVt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2229.5" y="1034.5"/>
         </scene>
@@ -396,6 +405,6 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sEs-SC-45n"/>
+        <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
 </document>
