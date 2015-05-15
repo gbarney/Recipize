@@ -346,6 +346,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
                                     <segue destination="25h-lT-a67" kind="presentation" id="JDE-K3-LVb"/>
                                 </connections>
                             </button>
@@ -355,6 +356,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
                                     <segue destination="25h-lT-a67" kind="presentation" id="DFr-gL-DV0"/>
                                 </connections>
                             </button>
@@ -364,6 +366,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
                                     <segue destination="25h-lT-a67" kind="presentation" id="Zzo-qr-eze"/>
                                 </connections>
                             </button>
@@ -373,6 +376,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
                                     <segue destination="25h-lT-a67" kind="presentation" id="eaZ-k3-NS1"/>
                                 </connections>
                             </button>

@@ -9,13 +9,26 @@ class SitesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var urlString = urlArray
 
     }
-
-   
+    
+    @IBAction func onGoogleButtonTapped(sender: UIButton) {
+        
+    }
+    @IBAction func onAllRecipesButtonTapped(sender: UIButton) {
+    }
+    
+    @IBAction func onFoodNetworkButtonTapped(sender: UIButton) {
+    }
+    
+    @IBAction func onYummlyButtonTapped(sender: UIButton) {
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var wvc = segue.destinationViewController as webViewController
-        siteURL =
+        var wvc = segue.destinationViewController as WebViewController
+        
     }
-
 }
+
