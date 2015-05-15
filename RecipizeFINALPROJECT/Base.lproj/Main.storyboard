@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="2229.5" y="288.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipies View Controller View Controller-->
         <scene sceneID="8Gd-6S-3pw">
             <objects>
-                <viewController id="nnn-Ht-H7O" sceneMemberID="viewController">
+                <viewController id="nnn-Ht-H7O" customClass="Recipies_View_ControllerViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vVY-gN-u7b"/>
                         <viewControllerLayoutGuide type="bottom" id="0YM-u0-Fo1"/>
@@ -128,37 +128,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PBB-FO-Ugn">
-                                <rect key="frame" x="92" y="319" width="191" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi5-kD-DUs">
-                                <rect key="frame" x="225" y="72" width="134" height="63"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="25"/>
-                                <state key="normal" title="Go Online">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="j5k-Gw-T0b" kind="presentation" id="wH6-aI-o85"/>
-                                </connections>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="hello" translatesAutoresizingMaskIntoConstraints="NO" id="QlD-AA-bj3">
+                                <rect key="frame" x="13" y="84" width="349" height="575"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8hI-iu-Guf">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qkp-oI-cKK"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yDp-Yi-z9V"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oi5-kD-DUs">
+                            <rect key="frame" x="121" y="-10" width="134" height="63"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="25"/>
+                            <state key="normal" title="Go Online">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <segue destination="j5k-Gw-T0b" kind="presentation" id="bcT-Cc-jND"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="yDp-Yi-z9V">
+                            <connections>
+                                <segue destination="Rcu-BQ-a7Q" kind="show" id="gJY-i8-XEN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3159.5" y="288.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
             <objects>
-                <viewController id="yT9-eo-Glt" sceneMemberID="viewController">
+                <viewController id="yT9-eo-Glt" customClass="WebViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z7e-qJ-Fwf"/>
                         <viewControllerLayoutGuide type="bottom" id="EeV-5z-xda"/>
@@ -174,12 +181,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ccK-ZQ-YPO"/>
+                    <navigationItem key="navigationItem" id="ccK-ZQ-YPO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oHv-d4-qWX">
+                            <connections>
+                                <segue destination="kZz-ZY-u53" kind="show" id="RIC-Jz-FXA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myWebView" destination="ED2-7i-z0P" id="Fjq-3I-SQi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ai-Iq-aeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5562.5" y="288.5"/>
+            <point key="canvasLocation" x="4889.5" y="288.5"/>
         </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="xeb-ZN-LdN">
@@ -312,10 +328,10 @@
             </objects>
             <point key="canvasLocation" x="2701.5" y="288.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Sites View Controller-->
         <scene sceneID="M7M-EU-KB3">
             <objects>
-                <viewController id="kZz-ZY-u53" sceneMemberID="viewController">
+                <viewController id="kZz-ZY-u53" customClass="SitesViewController" customModule="RecipizeFINALPROJECT" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wsa-L1-8ap"/>
                         <viewControllerLayoutGuide type="bottom" id="OdN-Ak-Phs"/>
@@ -325,38 +341,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeC-kC-f92">
-                                <rect key="frame" x="111" y="326" width="152" height="152"/>
+                                <rect key="frame" x="111" y="341" width="152" height="152"/>
                                 <state key="normal" backgroundImage="Food_Network_logo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
-                                <rect key="frame" x="96" y="88" width="182" height="83"/>
-                                <state key="normal" backgroundImage="Logo_2013_Google.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <segue destination="25h-lT-a67" kind="presentation" id="JDE-K3-LVb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
-                                <rect key="frame" x="76" y="191" width="222" height="113"/>
+                                <rect key="frame" x="64" y="193" width="246" height="113"/>
                                 <state key="normal" backgroundImage="arlogo_rgb">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="25h-lT-a67" kind="presentation" id="DFr-gL-DV0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
-                                <rect key="frame" x="96" y="515" width="182" height="80"/>
+                                <rect key="frame" x="96" y="532" width="182" height="80"/>
                                 <state key="normal" backgroundImage="Yummly_logo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="25h-lT-a67" kind="presentation" id="Zzo-qr-eze"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
+                                <rect key="frame" x="86" y="102" width="202" height="83"/>
+                                <state key="normal" backgroundImage="Logo_2013_Google.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="25h-lT-a67" kind="presentation" id="eaZ-k3-NS1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lfO-su-e9f"/>
+                    <navigationItem key="navigationItem" id="lfO-su-e9f">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="HW6-LG-MyP">
+                            <connections>
+                                <segue destination="nnn-Ht-H7O" kind="show" id="437-fy-zoA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4272.5" y="287.5"/>
+            <point key="canvasLocation" x="4013.5" y="288.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rjq-ib-7G1">
@@ -375,7 +409,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-Sh-C2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4891.5" y="287.5"/>
+            <point key="canvasLocation" x="4471.5" y="288.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dQy-S9-CRr">
@@ -394,7 +428,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9K-Xn-J4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3722" y="288"/>
+            <point key="canvasLocation" x="3593.5" y="288.5"/>
         </scene>
     </scenes>
     <resources>
@@ -406,5 +440,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6OR-ar-CPD"/>
+        <segue reference="gJY-i8-XEN"/>
+        <segue reference="437-fy-zoA"/>
+        <segue reference="RIC-Jz-FXA"/>
+        <segue reference="eaZ-k3-NS1"/>
     </inferredMetricsTieBreakers>
 </document>

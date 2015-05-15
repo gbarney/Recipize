@@ -20,6 +20,9 @@
 		3FC10A711B03982D00185AE1 /* Yummly_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A6E1B03982D00185AE1 /* Yummly_logo.png */; };
 		3FC10A721B03982D00185AE1 /* Logo_2013_Google.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A6F1B03982D00185AE1 /* Logo_2013_Google.png */; };
 		3FC10A731B03982D00185AE1 /* arlogo_rgb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC10A701B03982D00185AE1 /* arlogo_rgb.png */; };
+		3FC10A751B061FA400185AE1 /* Recipies View ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC10A741B061FA400185AE1 /* Recipies View ControllerViewController.swift */; };
+		3FC10A771B06232E00185AE1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC10A761B06232E00185AE1 /* WebViewController.swift */; };
+		3FC10A791B0623D300185AE1 /* SitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC10A781B0623D300185AE1 /* SitesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		3FC10A6E1B03982D00185AE1 /* Yummly_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yummly_logo.png; path = ../../../../../Pictures/Yummly_logo.png; sourceTree = "<group>"; };
 		3FC10A6F1B03982D00185AE1 /* Logo_2013_Google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo_2013_Google.png; path = ../../../../../Pictures/Logo_2013_Google.png; sourceTree = "<group>"; };
 		3FC10A701B03982D00185AE1 /* arlogo_rgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arlogo_rgb.png; path = ../../../../../Pictures/arlogo_rgb.png; sourceTree = "<group>"; };
+		3FC10A741B061FA400185AE1 /* Recipies View ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipies View ControllerViewController.swift"; sourceTree = "<group>"; };
+		3FC10A761B06232E00185AE1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3FC10A781B0623D300185AE1 /* SitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 				3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */,
 				3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */,
 				3F05BCDC1B02489E00D09D5F /* foodItem.swift */,
+				3FC10A741B061FA400185AE1 /* Recipies View ControllerViewController.swift */,
+				3FC10A761B06232E00185AE1 /* WebViewController.swift */,
 				3F1260221AFC5EE000D9E0AA /* RecipiesTableViewController.swift */,
 				3F1260201AFC5B2B00D9E0AA /* GroceryListTableViewController.swift */,
+				3FC10A781B0623D300185AE1 /* SitesViewController.swift */,
 				3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */,
 				3FC10A6C1B0396BA00185AE1 /* Food_Network_logo.png */,
 				3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */,
@@ -240,8 +249,11 @@
 				3F0A84CF1AFBAF1400DA66A0 /* ViewController.swift in Sources */,
 				3F1260231AFC5EE000D9E0AA /* RecipiesTableViewController.swift in Sources */,
 				3F1260211AFC5B2B00D9E0AA /* GroceryListTableViewController.swift in Sources */,
+				3FC10A791B0623D300185AE1 /* SitesViewController.swift in Sources */,
 				3F0A84CD1AFBAF1400DA66A0 /* AppDelegate.swift in Sources */,
+				3FC10A771B06232E00185AE1 /* WebViewController.swift in Sources */,
 				3F05BCDD1B02489E00D09D5F /* foodItem.swift in Sources */,
+				3FC10A751B061FA400185AE1 /* Recipies View ControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
