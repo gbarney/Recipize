@@ -52,7 +52,7 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         alert.addAction(cancelAction)
         
         var addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default) { (action) -> Void in
-            var foodTextField = alert.textFields?[0] as UITextField
+            var foodTextField = alert.textFields?[0] as! UITextField
             self.foodItems.append((name: foodTextField.text))
             self.groceryListTableView.reloadData()
         }
