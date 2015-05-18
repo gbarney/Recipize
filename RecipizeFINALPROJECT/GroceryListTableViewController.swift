@@ -62,7 +62,8 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
        
     }
     @IBAction func groceryVCTapped(sender: UITapGestureRecognizer) {
+
         //
+        }
         
     }
-}
