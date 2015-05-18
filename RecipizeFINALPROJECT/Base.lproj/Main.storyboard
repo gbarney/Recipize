@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -347,7 +347,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="JDE-K3-LVb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
@@ -357,7 +356,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="DFr-gL-DV0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
@@ -367,7 +365,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="Zzo-qr-eze"/>
+                                    <outletCollection property="gestureRecognizers" destination="KFT-4Q-q4R" appends="YES" id="EuE-HI-rQT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
@@ -377,11 +375,14 @@
                                 </state>
                                 <connections>
                                     <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="eaZ-k3-NS1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KFT-4Q-q4R" appends="YES" id="RDf-f0-5sg"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="lfO-su-e9f">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="HW6-LG-MyP">
@@ -393,6 +394,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KFT-4Q-q4R">
+                    <connections>
+                        <outlet property="delegate" destination="EeC-kC-f92" id="pAH-OL-kd2"/>
+                        <segue destination="25h-lT-a67" kind="presentation" id="p85-AJ-70U"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4013.5" y="288.5"/>
         </scene>
@@ -443,10 +450,9 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6OR-ar-CPD"/>
-        <segue reference="gJY-i8-XEN"/>
         <segue reference="437-fy-zoA"/>
         <segue reference="RIC-Jz-FXA"/>
-        <segue reference="eaZ-k3-NS1"/>
+        <segue reference="gJY-i8-XEN"/>
+        <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
 </document>
