@@ -24,6 +24,16 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
     }
+    
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        var food = foodItems[sourceIndexPath.row]
+        foodItems.removeAtIndex(sourceIndexPath.row)
+        foodItems.insert(food, atIndex: destinationIndexPath.row)
+    }
 
 func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
