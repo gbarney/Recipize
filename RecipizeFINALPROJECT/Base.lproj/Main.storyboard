@@ -182,11 +182,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ccK-ZQ-YPO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oHv-d4-qWX">
-                            <connections>
-                                <segue destination="kZz-ZY-u53" kind="show" id="RIC-Jz-FXA"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oHv-d4-qWX"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -340,6 +336,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="v18-TN-2gD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
@@ -349,6 +346,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="fAu-Ak-cbo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
@@ -358,6 +356,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="QDo-wq-4lD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
@@ -367,6 +366,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="1Af-3V-lE1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -433,8 +433,8 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="v18-TN-2gD"/>
         <segue reference="437-fy-zoA"/>
-        <segue reference="RIC-Jz-FXA"/>
         <segue reference="gJY-i8-XEN"/>
         <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
