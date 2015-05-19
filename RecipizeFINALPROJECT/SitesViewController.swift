@@ -33,7 +33,7 @@ class SitesViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var wvc = segue.destinationViewController as WebViewController
+        var wvc = segue.destinationViewController as! WebViewController
         wvc.webString = urlString
     }
 
