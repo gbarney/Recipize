@@ -20,7 +20,7 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as UITableViewCell
+        var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
     }
@@ -64,7 +64,7 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         alert.addAction(cancelAction)
         
         var addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default) { (action) -> Void in
-            var foodTextField = alert.textFields?[0] as UITextField
+            var foodTextField = alert.textFields?[0] as! UITextField
             self.foodItems.append((name: foodTextField.text))
             self.groceryListTableView.reloadData()
         }
