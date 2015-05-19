@@ -237,6 +237,12 @@
                                     <outlet property="delegate" destination="CQJ-f8-bpo" id="Zru-5e-j1s"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l8-OL-g62">
+                                <rect key="frame" x="166" y="6" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -443,10 +449,10 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6OR-ar-CPD"/>
-        <segue reference="gJY-i8-XEN"/>
-        <segue reference="437-fy-zoA"/>
-        <segue reference="RIC-Jz-FXA"/>
         <segue reference="eaZ-k3-NS1"/>
+        <segue reference="RIC-Jz-FXA"/>
+        <segue reference="437-fy-zoA"/>
+        <segue reference="gJY-i8-XEN"/>
+        <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
 </document>
