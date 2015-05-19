@@ -240,9 +240,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Aqa-ig-XKe" appends="YES" id="Dn5-3a-2DK"/>
-                        </connections>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="xGi-Js-AKX">
@@ -260,15 +257,11 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="editButton" destination="ujR-Zg-rCy" id="cRU-eP-SSa"/>
                         <outlet property="groceryListTableView" destination="hVM-K1-PAn" id="qSR-m1-Xzu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Aqa-ig-XKe">
-                    <connections>
-                        <action selector="groceryVCTapped:" destination="CQJ-f8-bpo" id="Oai-kJ-CVt"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2229.5" y="1034.5"/>
         </scene>
