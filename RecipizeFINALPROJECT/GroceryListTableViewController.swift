@@ -4,10 +4,12 @@ import UIKit
 
 class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     
+    @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var groceryListTableView: UITableView!
     var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
     
     override func viewDidLoad() {
+        editButton.tag = 0
         super.viewDidLoad()
 
         }
@@ -22,6 +24,16 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
     }
+    
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        var food = foodItems[sourceIndexPath.row]
+        foodItems.removeAtIndex(sourceIndexPath.row)
+        foodItems.insert(food, atIndex: destinationIndexPath.row)
+    }
 
 func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
@@ -30,8 +42,7 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         }
     }
     
-    @IBAction func onEditTappedButton(sender: UIBarButtonItem)
-    {
+    @IBAction func onEditTappedButton(sender: UIBarButtonItem) {
         if sender.tag == 0 {
             groceryListTableView.editing = true
             sender.tag = 1
@@ -41,6 +52,7 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
             sender.tag = 0
         }
     }
+    
     
     @IBAction func onAddGroceryButtonTapped(sender: UIBarButtonItem) {
         var alert = UIAlertController(title: "Add Grocery", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
@@ -61,8 +73,5 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
     
        
     }
-    @IBAction func groceryVCTapped(sender: UITapGestureRecognizer) {
-        //
         
     }
-}
