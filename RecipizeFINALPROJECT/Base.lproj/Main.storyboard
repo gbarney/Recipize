@@ -439,12 +439,8 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="eaZ-k3-NS1"/>
         <segue reference="RIC-Jz-FXA"/>
-=======
-        <segue reference="v18-TN-2gD"/>
->>>>>>> 38c2fbe8f5a0be309c119c9f4c41f3f5406a26f3
         <segue reference="437-fy-zoA"/>
         <segue reference="gJY-i8-XEN"/>
         <segue reference="6OR-ar-CPD"/>
