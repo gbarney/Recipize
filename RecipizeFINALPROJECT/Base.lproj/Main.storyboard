@@ -151,11 +151,6 @@
                                 <segue destination="j5k-Gw-T0b" kind="presentation" id="bcT-Cc-jND"/>
                             </connections>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yDp-Yi-z9V">
-                            <connections>
-                                <segue destination="Rcu-BQ-a7Q" kind="show" id="gJY-i8-XEN"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -435,7 +430,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="v18-TN-2gD"/>
         <segue reference="437-fy-zoA"/>
-        <segue reference="gJY-i8-XEN"/>
         <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
 </document>
