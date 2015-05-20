@@ -2,7 +2,7 @@
 
 import UIKit
 
-class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
+class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var groceryListTableView: UITableView!
@@ -41,7 +41,21 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
             groceryListTableView.reloadData()
         }
     }
-    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        let todo = foodItems[indexPath.row]
+        todo.isEmpty == !todo.isEmpty
+        if todo.isEmpty == false {
+            cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
+        } else{
+            cell?.accessoryType = UITableViewCellAccessoryType.None
+            
+        }
+    }
+
+
+
     @IBAction func onEditTappedButton(sender: UIBarButtonItem) {
         if sender.tag == 0 {
             groceryListTableView.editing = true
