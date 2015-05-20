@@ -24,4 +24,25 @@ class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITa
         cell.textLabel?.text = recipiesArray[indexPath.row]
         return cell
     }
-}
+    @IBAction func recipeAddNewButtonTapped(sender: UIBarButtonItem) {
+        var alert = UIAlertController(title: "Add New Recipe", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add Recipe Here"
+            
+        }
+        var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
+        alert.addAction(cancelAction)
+        
+        var addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default) { (action) -> Void in
+            var recipeTextField = alert.textFields?[0] as! UITextField
+            self.recipiesArray.append((name: recipeTextField.text))
+            self.recipieTableView.reloadData()
+        }
+        alert.addAction(addAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+        
+    }
+
+    }
+
