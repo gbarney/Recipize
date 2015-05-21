@@ -5,13 +5,12 @@ import UIKit
 class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var groceryListTableView: UITableView!
-    
-    var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
     @IBOutlet weak var editButtonOutlet: UIBarButtonItem!
-    override func viewDidLoad() {
+    var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
     
-        super.viewDidLoad()
+    override func viewDidLoad() {
         editButtonOutlet.tag = 0
+        super.viewDidLoad()
         }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
