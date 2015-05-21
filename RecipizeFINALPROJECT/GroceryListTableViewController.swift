@@ -2,14 +2,16 @@
 
 import UIKit
 
-class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
+class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var groceryListTableView: UITableView!
-    var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
     
+    var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
+    @IBOutlet weak var editButtonOutlet: UIBarButtonItem!
     override func viewDidLoad() {
+    
         super.viewDidLoad()
-
+        editButtonOutlet.tag = 0
         }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -21,15 +23,34 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = foodItems[indexPath.row]
         return cell
-        cell.accessoryType = UITableViewCellAccessoryType.Checkmark
-
-func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        var food = foodItems[sourceIndexPath.row]
+        foodItems.removeAtIndex(sourceIndexPath.row)
+        foodItems.insert(food, atIndex: destinationIndexPath.row)
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             foodItems.removeAtIndex(indexPath.row)
             groceryListTableView.reloadData()
         }
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        groceryListTableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let cell = groceryListTableView.cellForRowAtIndexPath(indexPath)
+        let todo = foodItems[indexPath.row]
+        todo.isEmpty == !todo.isEmpty
+        if todo.isEmpty == false {
+            cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
+        } else{
+            cell?.accessoryType = UITableViewCellAccessoryType.None
+            
+        }
+    }
+
     @IBAction func onEditTappedButton(sender: UIBarButtonItem)
     {
         if sender.tag == 0 {
@@ -61,8 +82,6 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
     
        
     }
-    @IBAction func groceryVCTapped(sender: UITapGestureRecognizer) {
-        //
-        
-    }
+     
 }
+

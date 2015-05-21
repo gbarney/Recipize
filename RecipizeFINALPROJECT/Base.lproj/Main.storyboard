@@ -210,7 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hVM-K1-PAn">
-                                <rect key="frame" x="0.0" y="-5" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZNs-wM-ipB">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -260,15 +260,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="editButtonOutlet" destination="ujR-Zg-rCy" id="50R-vE-abb"/>
                         <outlet property="groceryListTableView" destination="hVM-K1-PAn" id="qSR-m1-Xzu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Aqa-ig-XKe">
-                    <connections>
-                        <action selector="groceryVCTapped:" destination="CQJ-f8-bpo" id="Oai-kJ-CVt"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Aqa-ig-XKe"/>
             </objects>
             <point key="canvasLocation" x="2229.5" y="1034.5"/>
         </scene>
