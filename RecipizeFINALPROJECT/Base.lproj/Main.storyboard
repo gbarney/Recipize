@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
-=======
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
-=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
->>>>>>> db104d906d9518bdfef3070b643b663a4221584f
->>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -111,11 +103,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OHf-nq-kFM">
                             <connections>
-<<<<<<< HEAD
                                 <action selector="onAddRecipeButtonTapped:" destination="Rcu-BQ-a7Q" id="QDg-0T-Bgd"/>
-=======
-                                <action selector="recipeAddNewButtonTapped:" destination="Rcu-BQ-a7Q" id="i58-pp-3Ma"/>
->>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -266,11 +254,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-<<<<<<< HEAD
                         <outlet property="editButtonOutlet" destination="ujR-Zg-rCy" id="50R-vE-abb"/>
-=======
-                        <outlet property="editButton" destination="ujR-Zg-rCy" id="cRU-eP-SSa"/>
->>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
                         <outlet property="groceryListTableView" destination="hVM-K1-PAn" id="qSR-m1-Xzu"/>
                     </connections>
                 </viewController>
@@ -451,15 +435,8 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="eaZ-k3-NS1"/>
-        <segue reference="RIC-Jz-FXA"/>
-        <segue reference="gJY-i8-XEN"/>
-        <segue reference="7Rc-HC-vgC"/>
-=======
         <segue reference="7Rc-HC-vgC"/>
         <segue reference="v18-TN-2gD"/>
->>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
         <segue reference="sEs-SC-45n"/>
     </inferredMetricsTieBreakers>
 </document>

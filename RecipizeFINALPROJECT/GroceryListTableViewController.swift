@@ -11,7 +11,6 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     
     override func viewDidLoad() {
         editButtonOutlet.tag = 0
-        editButton.tag = 0
         super.viewDidLoad()
         }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
