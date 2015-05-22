@@ -4,12 +4,17 @@ import UIKit
 
 class GroceryListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var groceryListTableView: UITableView!
     @IBOutlet weak var editButtonOutlet: UIBarButtonItem!
     var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
     
     override func viewDidLoad() {
+<<<<<<< HEAD
         editButtonOutlet.tag = 0
+=======
+        editButton.tag = 0
+>>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
         super.viewDidLoad()
         }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -24,22 +29,40 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+<<<<<<< HEAD
+=======
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+>>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
     func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         var food = foodItems[sourceIndexPath.row]
         foodItems.removeAtIndex(sourceIndexPath.row)
         foodItems.insert(food, atIndex: destinationIndexPath.row)
     }
+<<<<<<< HEAD
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+=======
+
+func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+>>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
         if editingStyle == UITableViewCellEditingStyle.Delete {
             foodItems.removeAtIndex(indexPath.row)
             groceryListTableView.reloadData()
         }
     }
+<<<<<<< HEAD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         groceryListTableView.deselectRowAtIndexPath(indexPath, animated: true)
         let cell = groceryListTableView.cellForRowAtIndexPath(indexPath)
+=======
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+>>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
         let todo = foodItems[indexPath.row]
         todo.isEmpty == !todo.isEmpty
         if todo.isEmpty == false {
@@ -50,8 +73,14 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         }
     }
 
+<<<<<<< HEAD
     @IBAction func onEditTappedButton(sender: UIBarButtonItem)
     {
+=======
+
+
+    @IBAction func onEditTappedButton(sender: UIBarButtonItem) {
+>>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
         if sender.tag == 0 {
             groceryListTableView.editing = true
             sender.tag = 1
@@ -61,6 +90,7 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
             sender.tag = 0
         }
     }
+    
     
     @IBAction func onAddGroceryButtonTapped(sender: UIBarButtonItem) {
         var alert = UIAlertController(title: "Add Grocery", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
@@ -81,6 +111,11 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     
        
     }
+<<<<<<< HEAD
      
 }
 
+=======
+        
+    }
+>>>>>>> 05e3adfc128bd08bb6c79fac9dc4cb1c51e6fe95
