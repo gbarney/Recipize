@@ -441,8 +441,8 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="sEs-SC-45n"/>
         <segue reference="v18-TN-2gD"/>
         <segue reference="7Rc-HC-vgC"/>
-        <segue reference="6OR-ar-CPD"/>
     </inferredMetricsTieBreakers>
 </document>
