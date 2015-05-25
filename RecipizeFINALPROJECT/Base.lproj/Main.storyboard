@@ -85,6 +85,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Bq-T9-bos" id="cDM-fZ-XFr">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nnn-Ht-H7O" kind="presentation" id="Bbq-6j-ev7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -160,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3111.5" y="254.5"/>
+            <point key="canvasLocation" x="2985.5" y="282.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -328,7 +331,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5B-Vl-t1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605" y="255"/>
+            <point key="canvasLocation" x="2566.5" y="282.5"/>
         </scene>
         <!--Sites View Controller-->
         <scene sceneID="M7M-EU-KB3">
@@ -397,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4013.5" y="288.5"/>
+            <point key="canvasLocation" x="4013.5" y="282.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rjq-ib-7G1">
@@ -416,7 +419,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-Sh-C2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4471.5" y="288.5"/>
+            <point key="canvasLocation" x="4471.5" y="282.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dQy-S9-CRr">
@@ -435,7 +438,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9K-Xn-J4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3593.5" y="288.5"/>
+            <point key="canvasLocation" x="3573.5" y="282.5"/>
         </scene>
     </scenes>
     <resources>
@@ -446,8 +449,9 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sEs-SC-45n"/>
+        <segue reference="gJY-i8-XEN"/>
+        <segue reference="Bbq-6j-ev7"/>
         <segue reference="v18-TN-2gD"/>
-        <segue reference="7Rc-HC-vgC"/>
+        <segue reference="sEs-SC-45n"/>
     </inferredMetricsTieBreakers>
 </document>
