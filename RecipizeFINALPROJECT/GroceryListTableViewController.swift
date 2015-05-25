@@ -41,23 +41,19 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
             groceryListTableView.reloadData()
         }
     }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        groceryListTableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let cell = groceryListTableView.cellForRowAtIndexPath(indexPath)
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.groceryListTableView.allowsMultipleSelection = true
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         let todo = foodItems[indexPath.row]
         todo.isEmpty == !todo.isEmpty
         if todo.isEmpty == false {
             cell?.accessoryType = UITableViewCellAccessoryType.Checkmark
-        } else {
-            cell?.accessoryType = UITableViewCellAccessoryType.None
-            
         }
+        else  {
+            cell?.accessoryType == UITableViewCellAccessoryType.None
         }
-        }
+    }
 
     @IBAction func onEditTappedButton(sender: UIBarButtonItem) {
         if sender.tag == 0 {
@@ -74,7 +70,6 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         var alert = UIAlertController(title: "Add Grocery", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add Grocery Here"
-            
         }
         var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
         alert.addAction(cancelAction)
@@ -91,10 +86,10 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
     @IBAction func grocerySaveButtonTapped(sender: UIBarButtonItem) {
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         {
-        var food = foodItems[indexPath.row]
-        foodItems.append(food)
+        //var food = foodItems[indexPath.row]
+        //foodItems.append(food)
         var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
-            //String(stringInterpolationSegment: cell.textLabel?.text) == String(stringInterpolationSegment: foodItems.append((String)()))
+        //cell == foodItems
         return cell
         }
     }
