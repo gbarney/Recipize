@@ -24,4 +24,7 @@ class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITa
         cell.textLabel?.text = recipiesArray[indexPath.row]
         return cell
     }
+
+
 }
+

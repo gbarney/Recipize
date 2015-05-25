@@ -103,7 +103,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OHf-nq-kFM">
                             <connections>
-                                <segue destination="rgh-Xz-GG5" kind="presentation" id="DfB-LI-RkM"/>
+                                <action selector="onAddRecipeButtonTapped:" destination="Rcu-BQ-a7Q" id="QDg-0T-Bgd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-gD-tSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229.5" y="288.5"/>
+            <point key="canvasLocation" x="2137.5" y="282.5"/>
         </scene>
         <!--Recipies View Controller View Controller-->
         <scene sceneID="8Gd-6S-3pw">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3159.5" y="288.5"/>
+            <point key="canvasLocation" x="3111.5" y="254.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -182,11 +182,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ccK-ZQ-YPO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oHv-d4-qWX">
-                            <connections>
-                                <segue destination="kZz-ZY-u53" kind="show" id="RIC-Jz-FXA"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oHv-d4-qWX"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -221,10 +217,16 @@
                                                 <action selector="onAddGroceryButtonTapped:" destination="CQJ-f8-bpo" id="15I-Ba-l0S"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem width="279" style="plain" systemItem="fixedSpace" id="k1b-gE-1xK"/>
+                                        <barButtonItem systemItem="save" id="G2n-RD-YMU">
+                                            <connections>
+                                                <action selector="grocerySaveButtonTapped:" destination="CQJ-f8-bpo" id="9ns-Gc-Is3"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </items>
                                 </toolbar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groceryCell" id="0E8-dZ-wKP">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groceryCell" id="0E8-dZ-wKP" customClass="groceryListTableViewCellViewControllerTableViewCell" customModule="RecipizeFINALPROJECT" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0E8-dZ-wKP" id="Ojk-la-1Ox">
@@ -237,6 +239,12 @@
                                     <outlet property="delegate" destination="CQJ-f8-bpo" id="Zru-5e-j1s"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l8-OL-g62">
+                                <rect key="frame" x="166" y="6" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -263,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229.5" y="1034.5"/>
+            <point key="canvasLocation" x="2137.5" y="1044.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VNu-Mr-1o7">
@@ -308,6 +316,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rgh-Xz-GG5" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zaz-1O-YwO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -319,7 +328,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5B-Vl-t1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2701.5" y="288.5"/>
+            <point key="canvasLocation" x="2605" y="255"/>
         </scene>
         <!--Sites View Controller-->
         <scene sceneID="M7M-EU-KB3">
@@ -340,7 +349,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="JDE-K3-LVb"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="v18-TN-2gD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
@@ -350,7 +359,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="DFr-gL-DV0"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="fAu-Ak-cbo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
@@ -360,7 +369,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="Zzo-qr-eze"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="QDo-wq-4lD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
@@ -370,11 +379,12 @@
                                 </state>
                                 <connections>
                                     <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
-                                    <segue destination="25h-lT-a67" kind="presentation" id="eaZ-k3-NS1"/>
+                                    <segue destination="25h-lT-a67" kind="show" id="1Af-3V-lE1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="lfO-su-e9f">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="HW6-LG-MyP">
@@ -436,10 +446,8 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6OR-ar-CPD"/>
-        <segue reference="gJY-i8-XEN"/>
-        <segue reference="437-fy-zoA"/>
-        <segue reference="RIC-Jz-FXA"/>
-        <segue reference="eaZ-k3-NS1"/>
+        <segue reference="sEs-SC-45n"/>
+        <segue reference="v18-TN-2gD"/>
+        <segue reference="7Rc-HC-vgC"/>
     </inferredMetricsTieBreakers>
 </document>
