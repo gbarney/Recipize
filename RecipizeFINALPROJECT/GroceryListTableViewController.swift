@@ -34,8 +34,6 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
         foodItems.removeAtIndex(sourceIndexPath.row)
         foodItems.insert(food, atIndex: destinationIndexPath.row)
     }
-    
-
 
 func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
@@ -61,9 +59,6 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         }
         }
 
-
-
-
     @IBAction func onEditTappedButton(sender: UIBarButtonItem) {
         if sender.tag == 0 {
             groceryListTableView.editing = true
@@ -74,7 +69,6 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
             sender.tag = 0
         }
     }
-    
     
     @IBAction func onAddGroceryButtonTapped(sender: UIBarButtonItem) {
         var alert = UIAlertController(title: "Add Grocery", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
@@ -92,11 +86,16 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
         }
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
-    
-       
     }
-     
+    
+    @IBAction func grocerySaveButtonTapped(sender: UIBarButtonItem) {
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+        {
+        var food = foodItems[indexPath.row]
+        foodItems.append(food)
+        var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
+            //String(stringInterpolationSegment: cell.textLabel?.text) == String(stringInterpolationSegment: foodItems.append((String)()))
+        return cell
+        }
+    }
 }
-
-
-
