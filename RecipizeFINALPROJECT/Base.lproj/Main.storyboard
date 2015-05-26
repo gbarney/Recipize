@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -86,7 +86,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nnn-Ht-H7O" kind="presentation" id="Bbq-6j-ev7"/>
+                                            <segue destination="HMi-LZ-fs0" kind="presentation" id="Bbq-6j-ev7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-gD-tSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137.5" y="282.5"/>
+            <point key="canvasLocation" x="2289.5" y="216.5"/>
         </scene>
         <!--Recipies View Controller View Controller-->
         <scene sceneID="8Gd-6S-3pw">
@@ -128,26 +128,23 @@
                         <viewControllerLayoutGuide type="bottom" id="0YM-u0-Fo1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oRW-HK-zMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients and Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-V4-BLN">
-                                <rect key="frame" x="16" y="100" width="201" height="21"/>
+                                <rect key="frame" x="16" y="127" width="201" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="INGREDIENTS" translatesAutoresizingMaskIntoConstraints="NO" id="uQW-xM-Ci6">
-                                <rect key="frame" x="16" y="129" width="330" height="182"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="INGREDIENTS ////" translatesAutoresizingMaskIntoConstraints="NO" id="uQW-xM-Ci6">
+                                <rect key="frame" x="16" y="161" width="330" height="182"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="///////" translatesAutoresizingMaskIntoConstraints="NO" id="NrH-40-SPb">
-                                <rect key="frame" x="16" y="488" width="330" height="159"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nnn-Ht-H7O" id="TRE-oj-1j0"/>
+                                </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes for Recipe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-fF-70T">
                                 <rect key="frame" x="16" y="459" width="129" height="21"/>
@@ -155,12 +152,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="///////" translatesAutoresizingMaskIntoConstraints="NO" id="NrH-40-SPb">
+                                <rect key="frame" x="16" y="488" width="330" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nnn-Ht-H7O" id="p8l-IB-CjW"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5KP-uU-eo9" appends="YES" id="nh6-zb-4ig"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="8hI-iu-Guf">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qkp-oI-cKK"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qkp-oI-cKK">
+                            <connections>
+                                <action selector="onCancelButtonTapped:" destination="nnn-Ht-H7O" id="c3k-dy-Jkf"/>
+                            </connections>
+                        </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oi5-kD-DUs">
                             <rect key="frame" x="121" y="-10" width="134" height="63"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -169,17 +183,27 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <segue destination="j5k-Gw-T0b" kind="presentation" id="bcT-Cc-jND"/>
+                                <segue destination="RhN-RD-DBX" kind="presentation" id="U3P-xA-23Q"/>
                             </connections>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yDp-Yi-z9V">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="l2r-td-su9">
                             <connections>
-                                <segue destination="Rcu-BQ-a7Q" kind="show" id="gJY-i8-XEN"/>
+                                <action selector="saveDirectionsButtonTapped:" destination="nnn-Ht-H7O" id="d1z-xR-0Hj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ingredientsTextBox" destination="uQW-xM-Ci6" id="PjI-O1-m6n"/>
+                        <outlet property="notesTextBox" destination="NrH-40-SPb" id="k8f-Th-5Dg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5KP-uU-eo9">
+                    <connections>
+                        <action selector="onRecipeTapGestureTapped:" destination="nnn-Ht-H7O" id="Chc-fw-Fna"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2568.5" y="282.5"/>
         </scene>
@@ -212,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ai-Iq-aeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4889.5" y="288.5"/>
+            <point key="canvasLocation" x="6243.5" y="-1.5"/>
         </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="xeb-ZN-LdN">
@@ -305,6 +329,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="dKn-E2-rvN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Rcu-BQ-a7Q" kind="relationship" relationship="rootViewController" id="VDz-A1-MLC"/>
                     </connections>
@@ -351,7 +378,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="v18-TN-2gD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
@@ -361,7 +387,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="fAu-Ak-cbo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
@@ -371,8 +396,14 @@
                                 </state>
                                 <connections>
                                     <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="QDo-wq-4lD"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-M0-ui8">
+                                <rect key="frame" x="26" y="28" width="75" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
                                 <rect key="frame" x="86" y="102" width="202" height="83"/>
@@ -381,7 +412,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="1Af-3V-lE1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -391,7 +421,7 @@
                     <navigationItem key="navigationItem" id="lfO-su-e9f">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="HW6-LG-MyP">
                             <connections>
-                                <segue destination="nnn-Ht-H7O" kind="show" id="437-fy-zoA"/>
+                                <action selector="onDoneButtonTapped:" destination="kZz-ZY-u53" id="Fxk-mx-pTT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -418,24 +448,42 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-Sh-C2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4471.5" y="282.5"/>
+            <point key="canvasLocation" x="5795.5" y="-1.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="dQy-S9-CRr">
+        <scene sceneID="sPu-y5-gnj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j5k-Gw-T0b" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HMi-LZ-fs0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p3Y-pn-8YV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cV5-DG-ZIP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kZz-ZY-u53" kind="relationship" relationship="rootViewController" id="HPR-g4-Gtg"/>
+                        <segue destination="nnn-Ht-H7O" kind="relationship" relationship="rootViewController" id="WYn-lW-eYc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t9K-Xn-J4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-PM-igF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2795.5" y="556.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Aob-1Q-Msb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RhN-RD-DBX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iZe-Ej-gwu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kZz-ZY-u53" kind="relationship" relationship="rootViewController" id="iJY-bP-TmG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LZ-nF-tGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3020.5" y="282.5"/>
         </scene>
@@ -452,5 +500,6 @@
         <segue reference="gJY-i8-XEN"/>
         <segue reference="437-fy-zoA"/>
         <segue reference="v18-TN-2gD"/>
+        <segue reference="sEs-SC-45n"/>
     </inferredMetricsTieBreakers>
 </document>

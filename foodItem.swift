@@ -9,13 +9,19 @@
 import UIKit
 
 class foodItem: NSObject {
-    var name = ""
     
-    convenience init(name: String) {
+    var directions = ""
+    var notes = ""
+    
+    
+    
+    convenience init(directions: String, notes: String) {
         self.init()
-        self.name = name
+        self.directions = directions
+        self.notes = notes
         
     }
+
    
 }
 
