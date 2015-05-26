@@ -8,8 +8,10 @@ class Recipies_View_ControllerViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    @IBAction func onRecipeTapGestureTapped(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+
     }
- 
+
+
 }

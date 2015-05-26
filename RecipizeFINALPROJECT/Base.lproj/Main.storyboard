@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -128,7 +128,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0YM-u0-Fo1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oRW-HK-zMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients and Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-V4-BLN">
@@ -157,6 +157,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5KP-uU-eo9" appends="YES" id="nh6-zb-4ig"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="8hI-iu-Guf">
                         <nil key="title"/>
@@ -178,8 +182,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5KP-uU-eo9">
+                    <connections>
+                        <action selector="onRecipeTapGestureTapped:" destination="nnn-Ht-H7O" id="Chc-fw-Fna"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2985.5" y="282.5"/>
         </scene>
@@ -370,7 +380,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="v18-TN-2gD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
@@ -380,7 +389,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="fAu-Ak-cbo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
@@ -390,7 +398,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="QDo-wq-4lD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-x2-SSZ">
@@ -400,7 +407,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
-                                    <segue destination="25h-lT-a67" kind="show" id="1Af-3V-lE1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -467,9 +473,8 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="sEs-SC-45n"/>
         <segue reference="gJY-i8-XEN"/>
         <segue reference="Bbq-6j-ev7"/>
-        <segue reference="v18-TN-2gD"/>
-        <segue reference="sEs-SC-45n"/>
     </inferredMetricsTieBreakers>
 </document>
