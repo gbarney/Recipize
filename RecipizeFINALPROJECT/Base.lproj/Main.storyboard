@@ -181,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2985.5" y="282.5"/>
+            <point key="canvasLocation" x="2568.5" y="282.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -332,25 +332,6 @@
             </objects>
             <point key="canvasLocation" x="1691.5" y="1034.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bcz-xs-vFy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rgh-Xz-GG5" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zaz-1O-YwO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nnn-Ht-H7O" kind="relationship" relationship="rootViewController" id="7Rc-HC-vgC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R5B-Vl-t1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2566.5" y="282.5"/>
-        </scene>
         <!--Sites View Controller-->
         <scene sceneID="M7M-EU-KB3">
             <objects>
@@ -418,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4013.5" y="282.5"/>
+            <point key="canvasLocation" x="3703.5" y="282.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rjq-ib-7G1">
@@ -456,7 +437,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9K-Xn-J4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3573.5" y="282.5"/>
+            <point key="canvasLocation" x="3020.5" y="282.5"/>
         </scene>
     </scenes>
     <resources>
@@ -467,9 +448,9 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gJY-i8-XEN"/>
-        <segue reference="Bbq-6j-ev7"/>
-        <segue reference="v18-TN-2gD"/>
         <segue reference="sEs-SC-45n"/>
+        <segue reference="gJY-i8-XEN"/>
+        <segue reference="437-fy-zoA"/>
+        <segue reference="v18-TN-2gD"/>
     </inferredMetricsTieBreakers>
 </document>
