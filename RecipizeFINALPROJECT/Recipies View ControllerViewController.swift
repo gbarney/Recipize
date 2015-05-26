@@ -4,6 +4,8 @@ import UIKit
 
 class Recipies_View_ControllerViewController: UIViewController {
 
+    @IBOutlet weak var ingredientsTextBox: UITextView!
+    @IBOutlet weak var notesTextBox: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -13,5 +15,11 @@ class Recipies_View_ControllerViewController: UIViewController {
 
     }
 
+    @IBAction func onCancelButtonTapped(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
+    @IBAction func saveDirectionsButtonTapped(sender: UIBarButtonItem) {
+    }
+ 
 }

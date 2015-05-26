@@ -10,10 +10,14 @@ import UIKit
 
 class foodItem: NSObject {
     var name = ""
+    var directions = ""
+    var notes = ""
     
-    convenience init(name: String) {
+    convenience init(name: String, directions: String, notes: String) {
         self.init()
         self.name = name
+        self.directions = directions
+        self.notes = notes
         
     }
    

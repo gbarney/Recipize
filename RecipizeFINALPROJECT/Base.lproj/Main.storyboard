@@ -131,14 +131,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients and Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-V4-BLN">
+                                <rect key="frame" x="16" y="127" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="INGREDIENTS" translatesAutoresizingMaskIntoConstraints="NO" id="uQW-xM-Ci6">
                                 <rect key="frame" x="16" y="161" width="330" height="182"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="///////" translatesAutoresizingMaskIntoConstraints="NO" id="NrH-40-SPb">
-                                <rect key="frame" x="16" y="488" width="330" height="159"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -149,12 +149,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients and Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-V4-BLN">
-                                <rect key="frame" x="16" y="127" width="201" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="///////" translatesAutoresizingMaskIntoConstraints="NO" id="NrH-40-SPb">
+                                <rect key="frame" x="16" y="488" width="330" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -164,7 +164,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="8hI-iu-Guf">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qkp-oI-cKK"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Qkp-oI-cKK">
+                            <connections>
+                                <action selector="onCancelButtonTapped:" destination="nnn-Ht-H7O" id="c3k-dy-Jkf"/>
+                            </connections>
+                        </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oi5-kD-DUs">
                             <rect key="frame" x="121" y="-10" width="134" height="63"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -176,9 +180,17 @@
                                 <segue destination="RhN-RD-DBX" kind="presentation" id="U3P-xA-23Q"/>
                             </connections>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yDp-Yi-z9V"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="l2r-td-su9">
+                            <connections>
+                                <action selector="saveDirectionsButtonTapped:" destination="nnn-Ht-H7O" id="d1z-xR-0Hj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ingredientsTextBox" destination="uQW-xM-Ci6" id="PjI-O1-m6n"/>
+                        <outlet property="notesTextBox" destination="NrH-40-SPb" id="k8f-Th-5Dg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhl-B9-vPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="5KP-uU-eo9">
