@@ -2,16 +2,24 @@
 
 import UIKit
 
-class Recipies_View_ControllerViewController: UIViewController {
+class Recipies_View_ControllerViewController: UIViewController, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var ingredientsTextBox: UITextView!
     @IBOutlet weak var notesTextBox: UITextView!
-    var food : foodItem!
+
+    
+    var foodItems = foodItem()
+    
+    var savedText: String!
+    
+   
+    
     
     override func viewDidLoad() {
-        //unexpectedly found nil while unwrapping an Optional value (error for code below)
-        ingredientsTextBox.text = food.directions
-        notesTextBox.text! = food.notes
+        ingredientsTextBox.text = foodItems.directions
+        notesTextBox.text = foodItems.notes
+
+
         super.viewDidLoad()
         
     }
@@ -26,8 +34,14 @@ class Recipies_View_ControllerViewController: UIViewController {
     }
 
     @IBAction func saveDirectionsButtonTapped(sender: UIBarButtonItem) {
-        food.directions = ingredientsTextBox.text
-        food.notes = notesTextBox.text
+        foodItems.directions = ingredientsTextBox.text
+        foodItems.notes = notesTextBox.text
+
+
+    }
+    
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+        <#code#>
     }
  
 }
