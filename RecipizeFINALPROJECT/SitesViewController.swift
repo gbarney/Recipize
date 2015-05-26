@@ -37,5 +37,9 @@ class SitesViewController: UIViewController {
         wvc.webString = urlString
     }
 
+    @IBAction func onDoneButtonTapped(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
 }
 
