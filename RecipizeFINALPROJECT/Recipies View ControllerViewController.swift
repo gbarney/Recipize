@@ -6,8 +6,14 @@ class Recipies_View_ControllerViewController: UIViewController {
 
     @IBOutlet weak var ingredientsTextBox: UITextView!
     @IBOutlet weak var notesTextBox: UITextView!
+    var food : foodItem!
+    
     override func viewDidLoad() {
+        //unexpectedly found nil while unwrapping an Optional value (error for code below)
+        ingredientsTextBox.text = food.directions
+        notesTextBox.text! = food.notes
         super.viewDidLoad()
+        
     }
 
     @IBAction func onRecipeTapGestureTapped(sender: UITapGestureRecognizer) {
@@ -20,6 +26,8 @@ class Recipies_View_ControllerViewController: UIViewController {
     }
 
     @IBAction func saveDirectionsButtonTapped(sender: UIBarButtonItem) {
+        food.directions = ingredientsTextBox.text
+        food.notes = notesTextBox.text
     }
  
 }
