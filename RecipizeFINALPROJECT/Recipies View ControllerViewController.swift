@@ -10,7 +10,6 @@ class Recipies_View_ControllerViewController: UIViewController, UINavigationCont
     
     var foodItems = foodItem()
     
-    var savedText: String!
     
    
     
@@ -40,8 +39,6 @@ class Recipies_View_ControllerViewController: UIViewController, UINavigationCont
 
     }
     
-    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
-        <#code#>
-    }
+   
  
 }
