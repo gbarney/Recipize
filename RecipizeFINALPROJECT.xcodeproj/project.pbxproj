@@ -10,7 +10,6 @@
 		3F05BCDD1B02489E00D09D5F /* foodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05BCDC1B02489E00D09D5F /* foodItem.swift */; };
 		3F0A84CD1AFBAF1400DA66A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */; };
 		3F0A84CF1AFBAF1400DA66A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */; };
-		3F0A84D21AFBAF1400DA66A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */; };
 		3F0A84D41AFBAF1400DA66A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */; };
 		3F0A84D71AFBAF1400DA66A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */; };
 		3F0A84E31AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A84E21AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.swift */; };
@@ -37,7 +36,6 @@
 		3F0A84CB1AFBAF1400DA66A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F0A84CC1AFBAF1400DA66A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F0A84CE1AFBAF1400DA66A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F0A84D11AFBAF1400DA66A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F0A84D31AFBAF1400DA66A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F0A84D61AFBAF1400DA66A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3F0A84DC1AFBAF1400DA66A0 /* RecipizeFINALPROJECTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipizeFINALPROJECTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				3F0A84CB1AFBAF1400DA66A0 /* Info.plist */,
-				3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0A84D21AFBAF1400DA66A0 /* Main.storyboard in Resources */,
 				3F0A84D71AFBAF1400DA66A0 /* LaunchScreen.xib in Resources */,
 				3F0A84D41AFBAF1400DA66A0 /* Images.xcassets in Resources */,
 			);
@@ -260,14 +256,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F0A84D01AFBAF1400DA66A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F0A84D11AFBAF1400DA66A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F0A84D51AFBAF1400DA66A0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
