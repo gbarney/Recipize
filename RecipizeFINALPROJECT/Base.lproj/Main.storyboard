@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -205,7 +205,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2568.5" y="282.5"/>
+            <point key="canvasLocation" x="3610.5" y="-49.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -236,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ai-Iq-aeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6243.5" y="-1.5"/>
+            <point key="canvasLocation" x="5423.5" y="226.5"/>
         </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="xeb-ZN-LdN">
@@ -417,6 +417,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wNw-Ce-slq" appends="YES" id="kjy-Mu-QTw"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="lfO-su-e9f">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="HW6-LG-MyP">
@@ -428,8 +431,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wNw-Ce-slq">
+                    <connections>
+                        <segue destination="25h-lT-a67" kind="presentation" id="Cqj-j0-HEK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3703.5" y="282.5"/>
+            <point key="canvasLocation" x="4550.5" y="226.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rjq-ib-7G1">
@@ -448,7 +456,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-Sh-C2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5795.5" y="-1.5"/>
+            <point key="canvasLocation" x="4984.5" y="226.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sPu-y5-gnj">
@@ -485,7 +493,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LZ-nF-tGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3020.5" y="282.5"/>
+            <point key="canvasLocation" x="4103.5" y="226.5"/>
         </scene>
     </scenes>
     <resources>
@@ -496,10 +504,6 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sEs-SC-45n"/>
-        <segue reference="gJY-i8-XEN"/>
-        <segue reference="437-fy-zoA"/>
-        <segue reference="v18-TN-2gD"/>
         <segue reference="sEs-SC-45n"/>
     </inferredMetricsTieBreakers>
 </document>

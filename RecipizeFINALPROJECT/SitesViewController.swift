@@ -4,8 +4,6 @@ import UIKit
 
 class SitesViewController: UIViewController {
 
-
-    var urlArray = ["https://www.google.com", "http://allrecipes.com", "http://www.foodnetwork.com", "http://www.yummly.com"]
     var urlString = ""
     
     
@@ -15,20 +13,20 @@ class SitesViewController: UIViewController {
     }
     
     @IBAction func onGoogleButtonTapped(sender: UIButton) {
-        urlString = urlArray[0]
+        urlString = "https://www.google.com"
         
     }
     @IBAction func onAllRecipesButtonTapped(sender: UIButton) {
-        urlString = urlArray[1]
+        urlString = "http://allrecipes.com"
     }
     
     @IBAction func onFoodNetworkButtonTapped(sender: UIButton) {
-        urlString = urlArray[2]
+        urlString = "http://www.foodnetwork.com"
 
     }
     
     @IBAction func onYummlyButtonTapped(sender: UIButton) {
-        urlString = urlArray[3]
+        urlString = "http://www.yummly.com"
 
     }
     
