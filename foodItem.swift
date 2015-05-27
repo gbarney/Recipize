@@ -8,20 +8,16 @@
 
 import UIKit
 
-class foodItem: NSObject {
+class Recipe: NSObject {
     
     var directions = ""
     var notes = ""
-    
-    
     
     convenience init(directions: String, notes: String) {
         self.init()
         self.directions = directions
         self.notes = notes
-        
-    }
 
-   
+}
 }
 

@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-gD-tSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2289.5" y="216.5"/>
+            <point key="canvasLocation" x="2137.5" y="288.5"/>
         </scene>
         <!--Recipies View Controller View Controller-->
         <scene sceneID="8Gd-6S-3pw">
@@ -205,7 +205,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3610.5" y="-49.5"/>
+            <point key="canvasLocation" x="3046.5" y="288.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -226,9 +226,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ccK-ZQ-YPO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="oHv-d4-qWX"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="ccK-ZQ-YPO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="myWebView" destination="ED2-7i-z0P" id="Fjq-3I-SQi"/>
@@ -236,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ai-Iq-aeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5423.5" y="226.5"/>
+            <point key="canvasLocation" x="3975.5" y="1044.5"/>
         </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="xeb-ZN-LdN">
@@ -378,6 +376,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onFoodNetworkButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="jJY-Ga-XgR"/>
+                                    <segue destination="yT9-eo-Glt" kind="show" id="yG0-pY-9Q1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-I4-x2z">
@@ -387,6 +386,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onAllRecipesButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="lGN-Rr-2WW"/>
+                                    <segue destination="yT9-eo-Glt" kind="show" id="fwn-tZ-OAU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-re-kgS">
@@ -396,6 +396,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onYummlyButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="gag-Cd-MUc"/>
+                                    <segue destination="yT9-eo-Glt" kind="show" id="Btm-7i-R99"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-M0-ui8">
@@ -412,14 +413,12 @@
                                 </state>
                                 <connections>
                                     <action selector="onGoogleButtonTapped:" destination="kZz-ZY-u53" eventType="touchUpInside" id="cGJ-pn-EvF"/>
+                                    <segue destination="yT9-eo-Glt" kind="show" id="dSF-yt-qhV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="wNw-Ce-slq" appends="YES" id="kjy-Mu-QTw"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="lfO-su-e9f">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="HW6-LG-MyP">
@@ -431,32 +430,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="wNw-Ce-slq">
-                    <connections>
-                        <segue destination="25h-lT-a67" kind="presentation" id="Cqj-j0-HEK"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4550.5" y="226.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Rjq-ib-7G1">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="25h-lT-a67" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Xr-nQ-7TP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yT9-eo-Glt" kind="relationship" relationship="rootViewController" id="GJT-eL-Y4N"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-Sh-C2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4984.5" y="226.5"/>
+            <point key="canvasLocation" x="3498.5" y="1044.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sPu-y5-gnj">
@@ -474,7 +449,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-PM-igF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2795.5" y="556.5"/>
+            <point key="canvasLocation" x="2579.5" y="288.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Aob-1Q-Msb">
@@ -493,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LZ-nF-tGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4103.5" y="226.5"/>
+            <point key="canvasLocation" x="3046.5" y="1044.5"/>
         </scene>
     </scenes>
     <resources>
@@ -505,5 +480,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sEs-SC-45n"/>
+        <segue reference="yG0-pY-9Q1"/>
     </inferredMetricsTieBreakers>
 </document>
