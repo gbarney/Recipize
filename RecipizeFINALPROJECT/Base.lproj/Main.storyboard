@@ -45,7 +45,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g3f-Yj-0uL" kind="presentation" id="qnV-hf-Pwb"/>
+                                    <segue destination="CQJ-f8-bpo" kind="show" id="E7d-1n-YMu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2633.5" y="288.5"/>
+            <point key="canvasLocation" x="2137.5" y="288.5"/>
         </scene>
         <!--Recipies Table View Controller-->
         <scene sceneID="4f5-bV-2he">
@@ -101,7 +101,7 @@
                     <navigationItem key="navigationItem" id="QuZ-8S-hcL">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OHf-nq-kFM">
                             <connections>
-                                <action selector="onAddRecipieButtonTapped:" destination="Rcu-BQ-a7Q" id="aYp-Ah-pIQ"/>
+                                <action selector="onAddRecipeButtonTapped:" destination="Rcu-BQ-a7Q" id="B3g-m9-KUf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-gD-tSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3210.5" y="347.5"/>
+            <point key="canvasLocation" x="2622.5" y="288.5"/>
         </scene>
         <!--Recipies View Controller View Controller-->
         <scene sceneID="8Gd-6S-3pw">
@@ -204,7 +204,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4600.5" y="288.5"/>
+            <point key="canvasLocation" x="3088.5" y="288.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -233,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ai-Iq-aeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3975.5" y="1044.5"/>
+            <point key="canvasLocation" x="3565.5" y="1044.5"/>
         </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="xeb-ZN-LdN">
@@ -298,7 +298,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="xGi-Js-AKX">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="cYf-J9-1QE"/>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="ujR-Zg-rCy">
                             <connections>
                                 <action selector="onEditTappedButton:" destination="CQJ-f8-bpo" id="fK3-3b-UGm"/>
@@ -315,25 +314,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHc-b4-dys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2137.5" y="1044.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fBb-ka-EBD">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g3f-Yj-0uL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xRv-zc-Y8B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CQJ-f8-bpo" kind="relationship" relationship="rootViewController" id="fB7-AZ-Vnd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpk-FY-eoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1691.5" y="1034.5"/>
         </scene>
         <!--Sites View Controller-->
         <scene sceneID="M7M-EU-KB3">
@@ -409,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5022.5" y="288.5"/>
+            <point key="canvasLocation" x="3088.5" y="1044.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cbF-D3-qXy">
@@ -428,7 +408,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxI-ao-QNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821" y="288"/>
+            <point key="canvasLocation" x="1668.5" y="288.5"/>
         </scene>
     </scenes>
     <resources>
