@@ -32,13 +32,10 @@ class Recipies_View_ControllerViewController: UIViewController, UINavigationCont
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    @IBAction func saveDirectionsButtonTapped(sender: UIBarButtonItem) {
+    
+    @IBAction func onSaveRecipeInfoButtonTapped(sender: UIButton) {
         foodItems.directions = ingredientsTextBox.text
         foodItems.notes = notesTextBox.text
-
-
     }
-    
-   
  
 }

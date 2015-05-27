@@ -141,7 +141,7 @@
                                 <rect key="frame" x="16" y="161" width="330" height="182"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="nnn-Ht-H7O" id="TRE-oj-1j0"/>
                                 </connections>
@@ -161,6 +161,15 @@
                                     <outlet property="delegate" destination="nnn-Ht-H7O" id="p8l-IB-CjW"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww2-GE-tMD">
+                                <rect key="frame" x="300" y="84" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSaveRecipeInfoButtonTapped:" destination="nnn-Ht-H7O" eventType="touchUpInside" id="OTm-if-6Xm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -186,11 +195,6 @@
                                 <segue destination="RhN-RD-DBX" kind="presentation" id="U3P-xA-23Q"/>
                             </connections>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="l2r-td-su9">
-                            <connections>
-                                <action selector="saveDirectionsButtonTapped:" destination="nnn-Ht-H7O" id="d1z-xR-0Hj"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
