@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CD3-9f-2Dy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cE5-Yg-WzN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rcu-BQ-a7Q" kind="show" id="u1m-N5-eby"/>
+                                    <segue destination="Rcu-BQ-a7Q" kind="show" id="e7r-gJ-Ihk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food_heart" translatesAutoresizingMaskIntoConstraints="NO" id="s2M-Ku-8Wn">
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.5" y="288.5"/>
+            <point key="canvasLocation" x="2633.5" y="288.5"/>
         </scene>
         <!--Recipies Table View Controller-->
         <scene sceneID="4f5-bV-2he">
@@ -101,7 +101,7 @@
                     <navigationItem key="navigationItem" id="QuZ-8S-hcL">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OHf-nq-kFM">
                             <connections>
-                                <action selector="onAddRecipeButtonTapped:" destination="Rcu-BQ-a7Q" id="2sy-6Z-AEz"/>
+                                <action selector="onAddRecipieButtonTapped:" destination="Rcu-BQ-a7Q" id="aYp-Ah-pIQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOH-gD-tSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2724.5" y="288.5"/>
+            <point key="canvasLocation" x="3210.5" y="347.5"/>
         </scene>
         <!--Recipies View Controller View Controller-->
         <scene sceneID="8Gd-6S-3pw">
@@ -204,7 +204,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3201.5" y="288.5"/>
+            <point key="canvasLocation" x="4600.5" y="288.5"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="7Me-0b-y5x">
@@ -298,11 +298,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="xGi-Js-AKX">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="cYf-J9-1QE">
-                            <connections>
-                                <segue destination="CD3-9f-2Dy" kind="show" id="6OR-ar-CPD"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="cYf-J9-1QE"/>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="ujR-Zg-rCy">
                             <connections>
                                 <action selector="onEditTappedButton:" destination="CQJ-f8-bpo" id="fK3-3b-UGm"/>
@@ -413,25 +409,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1k-fP-aFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3623.5" y="288.5"/>
+            <point key="canvasLocation" x="5022.5" y="288.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="mqY-B0-R9r">
+        <scene sceneID="cbF-D3-qXy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CD3-9f-2Dy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cE5-Yg-WzN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YAz-Nh-YPA">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kho-qj-OEF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="EK2-zR-eov"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="4Gf-K0-9mh"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nur-m3-k5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxI-ao-QNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234.5" y="288.5"/>
+            <point key="canvasLocation" x="1821" y="288"/>
         </scene>
     </scenes>
     <resources>
