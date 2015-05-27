@@ -7,7 +7,10 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var groceryListTableView: UITableView!
     @IBOutlet weak var editButtonOutlet: UIBarButtonItem!
+   
     var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
+    
+    
     
     override func viewDidLoad() {
         editButtonOutlet.tag = 0
