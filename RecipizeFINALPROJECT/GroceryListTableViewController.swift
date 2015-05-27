@@ -7,6 +7,8 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var groceryListTableView: UITableView!
     @IBOutlet weak var editButtonOutlet: UIBarButtonItem!
+    @IBOutlet weak var groceryTableViewCellOutlet: UITableViewCell!
+   
     var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     {
         var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = foodItems[indexPath.row]
+
         return cell
     }
 
@@ -84,13 +87,18 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
     }
     
     @IBAction func grocerySaveButtonTapped(sender: UIBarButtonItem) {
-        
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         {
-        //var food = foodItems[indexPath.row]
-        //foodItems.append(food)
         var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
-        //cell == foodItems
+            
+            //groceryTableViewCellOutlet.textLabel?.text = foodItems[indexPath.row]
+        //var new = cell.textLabel?.text
+        //foodItems.append(new!) 
+        
+            foodItems.append(String(stringInterpolationSegment: cell.textLabel?.text!))
+            foodItems.append(foodItems[indexPath.row])
+        cell.textLabel?.text = foodItems[indexPath.row]
+        //return foodItems.count
         return cell
         }
     }

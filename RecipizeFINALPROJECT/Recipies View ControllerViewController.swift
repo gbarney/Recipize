@@ -4,24 +4,18 @@ import UIKit
 
 class Recipies_View_ControllerViewController: UIViewController, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
 
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ingredientsTextBox: UITextView!
     @IBOutlet weak var notesTextBox: UITextView!
-
-    
-    var foodItems = foodItem()
-    
-    
-   
-    
     
     override func viewDidLoad() {
-        ingredientsTextBox.text = foodItems.directions
-        notesTextBox.text = foodItems.notes
-
-
         super.viewDidLoad()
-        
+        nameTextField.text = recipe.name
+        ingredientsTextBox.text = recipe.directions
+        notesTextBox.text = recipe.notes
     }
+    
+    var recipe : Recipe!
 
     @IBAction func onRecipeTapGestureTapped(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
@@ -31,14 +25,10 @@ class Recipies_View_ControllerViewController: UIViewController, UINavigationCont
     @IBAction func onCancelButtonTapped(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
-    @IBAction func saveDirectionsButtonTapped(sender: UIBarButtonItem) {
-        foodItems.directions = ingredientsTextBox.text
-        foodItems.notes = notesTextBox.text
-
-
+    @IBAction func onTappedSaveButton(sender: UIBarButtonItem) {
+        recipe.name = nameTextField.text
+        recipe.directions = ingredientsTextBox.text
+        recipe.notes = notesTextBox.text
     }
-    
-   
- 
+
 }

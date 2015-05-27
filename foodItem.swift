@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Recipe: NSObject {
+class foodItem: NSObject {
     
     var directions = ""
     var notes = ""
@@ -17,7 +17,8 @@ class Recipe: NSObject {
         self.init()
         self.directions = directions
         self.notes = notes
+        
+    }
 
-}
 }
 
