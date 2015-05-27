@@ -5,7 +5,7 @@ import UIKit
 class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var recipieTableView: UITableView!
-    var recipiesArray = ["pie"]
+    var recipiesArray = ["Pie"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
