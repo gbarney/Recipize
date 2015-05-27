@@ -46,14 +46,16 @@ class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITa
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
+    
+    @IBAction func backButtonTapped(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var dvc = segue.destinationViewController as! Recipies_View_ControllerViewController
         var index = recipieTableView.indexPathForSelectedRow()?.row
         dvc.recipe = recipes[index!]
     }
-    
-    
-    
 }
 
 

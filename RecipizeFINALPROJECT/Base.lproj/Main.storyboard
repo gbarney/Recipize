@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -101,12 +101,13 @@
                     <navigationItem key="navigationItem" id="QuZ-8S-hcL">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="hgb-tc-lE0">
                             <connections>
-                                <segue destination="vXZ-lx-hvc" kind="show" id="sEs-SC-45n"/>
+                                <action selector="backButtonTapped:" destination="Rcu-BQ-a7Q" id="gYP-Lg-yL3"/>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="W2a-Ya-i9R"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OHf-nq-kFM">
                             <connections>
-                                <action selector="onAddRecipeButtonTapped:" destination="Rcu-BQ-a7Q" id="9f4-EO-Kuj"/>
+                                <action selector="onAddRecipieButtonTapped:" destination="Rcu-BQ-a7Q" id="aYp-Ah-pIQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -475,7 +476,7 @@
         <image name="food_heart" width="268" height="257"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sEs-SC-45n"/>
+        <segue reference="W2a-Ya-i9R"/>
         <segue reference="yG0-pY-9Q1"/>
     </inferredMetricsTieBreakers>
 </document>
