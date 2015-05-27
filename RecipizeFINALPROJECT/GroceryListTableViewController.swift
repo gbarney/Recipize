@@ -7,13 +7,14 @@ class GroceryListTableViewController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var groceryListTableView: UITableView!
     @IBOutlet weak var editButtonOutlet: UIBarButtonItem!
+    @IBOutlet weak var groceryTableViewCellOutlet: UITableViewCell!
    
     var foodItems = ["Frozen Pizza", "Lettuce", "Tomato", "Cheese"]
-    
-    
+    var grocery = groceryListItem()
     
     override func viewDidLoad() {
         editButtonOutlet.tag = 0
+        groceryTableViewCellOutlet == grocery.item
         super.viewDidLoad()
         }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -88,13 +89,15 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
     }
     
     @IBAction func grocerySaveButtonTapped(sender: UIBarButtonItem) {
-        //I think the problem is that the new food items that are added on the table view are not being added to the array so when you try to save you only save what is already on the cells which is what is on the array. So we need to figure out how to get the new items onto the array
+        //groceryTableViewCellOutlet.textLabel?.text == grocery.item
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         {
         var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
+            groceryTableViewCellOutlet.textLabel?.text = foodItems[indexPath.row]
         //var new = cell.textLabel?.text
         //foodItems.append(new!)
         cell.textLabel?.text = foodItems[indexPath.row]
+        grocery.item == cell.textLabel?.text!
         //return foodItems.count
         return cell
     
