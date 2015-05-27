@@ -89,18 +89,20 @@ func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableV
     }
     
     @IBAction func grocerySaveButtonTapped(sender: UIBarButtonItem) {
-        //groceryTableViewCellOutlet.textLabel?.text == grocery.item
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         {
         var cell = groceryListTableView.dequeueReusableCellWithIdentifier("groceryCell", forIndexPath: indexPath) as! UITableViewCell
-            groceryTableViewCellOutlet.textLabel?.text = foodItems[indexPath.row]
+            
+            //groceryTableViewCellOutlet.textLabel?.text = foodItems[indexPath.row]
         //var new = cell.textLabel?.text
-        //foodItems.append(new!)
+        //foodItems.append(new!) 
+        
+            foodItems.append(String(stringInterpolationSegment: cell.textLabel?.text!))
+            foodItems.append(foodItems[indexPath.row])
         cell.textLabel?.text = foodItems[indexPath.row]
         grocery.item == cell.textLabel?.text!
         //return foodItems.count
         return cell
-    
         }
     }
 }
