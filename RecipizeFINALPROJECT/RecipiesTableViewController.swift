@@ -31,10 +31,11 @@ class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITa
         }
     }
 
-    @IBAction func onAddRecipieButtonTapped(sender: UIBarButtonItem) {
+    
+    @IBAction func onAddRecipeButtonTapped(sender: UIBarButtonItem) {
         var alert = UIAlertController(title: "Add Recipe", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in textField.placeholder
-            = "Add College Here"
+            = "Add Recipe Here"
         }
         var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil)
         alert.addAction(cancelAction)
@@ -45,6 +46,7 @@ class RecipiesTableViewController: UIViewController, UITableViewDataSource, UITa
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
+   
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var dvc = segue.destinationViewController as! Recipies_View_ControllerViewController
