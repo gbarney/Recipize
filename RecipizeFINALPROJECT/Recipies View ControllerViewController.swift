@@ -29,6 +29,8 @@ class Recipies_View_ControllerViewController: UIViewController, UINavigationCont
         recipe.name = nameTextField.text
         recipe.directions = ingredientsTextBox.text
         recipe.notes = notesTextBox.text
+        self.ingredientsTextBox.resignFirstResponder()
+        self.notesTextBox.resignFirstResponder()
     }
 
 }
