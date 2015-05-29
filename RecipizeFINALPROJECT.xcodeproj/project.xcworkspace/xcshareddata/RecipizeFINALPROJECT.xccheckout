@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EF0B2714-A0F4-4F76-97C6-CEE06F52F619</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RecipizeFINALPROJECT</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B83E052545B79FEAA52FAC4661D4E9AB823F49E7</key>
+		<string>https://github.com/gbarney/Recipize.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RecipizeFINALPROJECT.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B83E052545B79FEAA52FAC4661D4E9AB823F49E7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gbarney/Recipize.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B83E052545B79FEAA52FAC4661D4E9AB823F49E7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B83E052545B79FEAA52FAC4661D4E9AB823F49E7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Recipize</string>
+		</dict>
+	</array>
+</dict>
+</plist>
